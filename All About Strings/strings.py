@@ -24,3 +24,15 @@ string_one = "My dog ate"
 string_two = "my homework!"
 string_three = string_one + string_two
 
+############# String Methods ################
+
+my_string = "This is a string!"
+print(my_string.upper())
+print(my_string.lower())
+print(dir(my_string))
+
+#Introspection allows you to ask Python about itself
+print(help(my_string.rpartition))
+print(type(my_string))
+
+
