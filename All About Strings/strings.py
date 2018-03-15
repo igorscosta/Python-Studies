@@ -35,4 +35,18 @@ print(dir(my_string))
 print(help(my_string.rpartition))
 print(type(my_string))
 
+################ String Slicing ##################
+
+my_string = "I like Python!"
+print(my_string[0:1])
+print(my_string[:1])
+print(my_string[0:12])
+print(my_string[0:13])
+print(my_string[0:14])
+print(my_string[0:-5])
+print(my_string[:])
+print(my_string[2:])
+
+#Access individual characters in a string via indexing
+print(my_string[0])
 
