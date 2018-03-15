@@ -50,3 +50,47 @@ print(my_string[2:])
 #Access individual characters in a string via indexing
 print(my_string[0])
 
+
+################# Stting Formating #################
+
+#The old way
+
+my_string = "I like %s" % "Python"
+print(my_string)
+
+var = "cookies"
+new_string = "I like %s" % var
+print(new_string)
+
+another_string = "I like %s and %s" % ("Python", var)
+print(another_string)
+# You have to pass the same number of strings to the arguments
+
+# integers and floats
+my_string = "%i + %i = %i" % (1, 2, 3)
+print(my_string)
+
+float_string = "%f" %(1.23)
+print(float_string)
+
+float_string2 = "%.2f" % (1.23)
+print(float_string2)
+
+float_string3 = "%.2f" % (1.237)
+print(float_string3)
+
+
+#The new way (templates)
+print("%(lang)s is fun!" % {"lang" : "Python"})
+
+print("%(value)s %(value)s %(value)s !" % {"value" : "SPAM"})
+
+print("%(x)i + %(y)i = %(z)i" % {"x":1, "y":2, "z":3})
+
+#Using string's format method!
+print("Python is as simple as {0}, {1}, {2}".format("a", "b", "c"))
+
+print("Pythos is as simple as {1}, {0}, {2}".format("a", "b", "c"))
+
+xy = {"x":0, "y":10}
+print("Graph a point at where x={x} and y={y}".format(**xy))
